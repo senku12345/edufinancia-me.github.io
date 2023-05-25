@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+body{  
+  background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 20px 20px;
+
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+}
+:root{
+  --padding-container: 100px 0;
+  --color-tittle: #001A49;
+}
+.container{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  padding: var(--padding-container);
+}
+.hero{
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display:grid ;
+  grid-template-rows: 100px 1fr;
+  color: #fff;
+}
+.hero::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #0000008c 0%,#0000008c 100%),url(https://finbive.com/wp-content/uploads/2021/10/EDUCACION-FINANZAS.png);
+  background-size:cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  z-index: -1;
+}
+/*nav*/
+  
+
+  .nav{ 
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    text-align: center;
+  }
+  .nav_title{
+    font-weight: 400;
+    font-size: 35px; /*con font-size se aumenta el tamaño*/
+    text-align: center; /**con esto lo mando pal centro */
+  }
+  .nav_link {
+    text-align: center;
+    margin-left: 350px;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+  }
+  .nav_links{
+  color: #fff;
+  text-decoration: none;
+
+  }
+  .nav_items{
+  list-style: none;
+  }
+  .nav_menu{
+  margin-left: auto;
+  cursor: pointer;
+  display: none;
+  }
+  .nav_img{
+  display: block;
+  width: 30px;
+  }
+  .nav_close{
+  display: var(--show, none);
+  }
+  /*hero container*/
+  .hero_paragraph{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+  .video{
+    display: inline-block;
+    background-color: #5b0463;
+    justify-self: center;
+    color:#fff;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 32px;
+  }
+  .cta{
+    display: inline-block;
+    background-color: #2091f9;
+    justify-self: center;
+    color:#fff;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 32px;
+  }
+  /*temas*/
+  .temas{
+    background-color: #e5e5f7;
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    overflow: hidden;
+  }
+  .tema_container{
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+  }
+  .topic_image{
+    max-width: 500px;
+    padding: 13px 22px;
+    border-radius: 32px;
+    display: inline-block;
+  }
+  .paragraph{
+    line-height: 1.7;
+    margin-bottom: 15px
+  }
+  .imagen{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    margin-inline: 2px;
+  }
+  .mod1{
+    display: inline-block;
+    background-color: #2091f9;    
+    justify-self: center;
+    color:#fff;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 32px;
+  }
+  .titulo{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-size: 50px;
+  }
+  .blogs{
+    display: inline-block;
+    background-color: #2091f9;    
+    justify-self: center;
+    color:#fff;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 32px;
+  }
+  .footer {
+      position: relative;
+      margin-top: -83px; /* ponga en negativo el alto de su pie de página para nuestro    ejemplo usamos 63, usted debe remplazarlo según su diseño   */
+      height: 100px;
+      clear:both;
+      width:100%;
+      background-color: #046128;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 16px;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .footer-links {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .footer-links a {
+      color: #fff;
+      margin-right: 20px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: #aaa;
+    }
+
+    .footer-social-icons {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .footer-social-icons a {
+      color: #fff;
+      margin-right: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-social-icons a:hover {
+      color: #aaa;
+    }
+
+    .footer-text {
+      margin-bottom: 10px;
+    }
+
+ 
